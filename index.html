@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN"> <!-- 改为中文语言标识更合适 -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 适配移动端 -->
+  <title>张业晖的个人主页</title>
+  <style>
+      /* 全局样式重置与统一 */
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box; /* 统一盒模型 */
+      }
+
+      body {
+          max-width: 800px;
+          margin: 0 auto;
+          padding: 30px 20px;
+          background-color: #f8f3e6; /* 更柔和的玉米色 */
+          font-family: "Microsoft YaHei", "PingFang SC", sans-serif; /* 美观的无衬线中文字体 */
+          color: #333; /* 主文字颜色更舒适 */
+          line-height: 1.6; /* 行高提升可读性 */
+      }
+
+      /* 标题样式 - 居中+美化 */
+      h1 {
+          text-align: center;
+          color: #2f2fad;
+          margin-bottom: 20px;
+          font-size: 2.2rem;
+      }
+
+      h2 {
+          text-align: center;
+          color: #3a3a9c;
+          margin: 30px 0 15px;
+          padding-bottom: 8px;
+          border-bottom: 2px solid #e41c1c;
+      }
+
+      /* 分隔线美化 */
+      hr {
+          border: none;
+          height: 2px;
+          background-color: #e41c1c;
+          margin: 10px 0 20px;
+      }
+
+      /* 图片居中+美化 */
+      img {
+          display: block; /* 实现居中 */
+          margin: 0 auto 20px; /* 上下间距 */
+          border-radius: 10px; /* 圆角 */
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 轻微阴影 */
+      }
+
+      /* 段落文字居中+样式 */
+      p {
+          text-align: center;
+          margin-bottom: 15px;
+          font-size: 1.05rem;
+      }
+
+      /* 类选择器样式优化 */
+      .c {
+          color: #2f2fad;
+          width: 60%;
+          margin: 0 auto; /* 列表居中 */
+          font-size: 1.05rem;
+          line-height: 1.8;
+      }
+
+      /* ID选择器样式优化 */
+      #ap {
+          color: #e41c1c;
+          width: 60%;
+          margin: 0 auto; /* 列表居中 */
+          font-size: 1.05rem;
+          line-height: 1.8;
+      }
+
+      /* 链接样式美化 */
+      a {
+          color: #2f2fad;
+          text-decoration: none; /* 去掉默认下划线 */
+      }
+
+      a:hover {
+          color: #e41c1c; /* 鼠标悬浮变色 */
+          text-decoration: underline;
+      }
+
+      /* 列表样式优化 */
+      ul, ol {
+          margin-bottom: 20px;
+          padding-left: 20px;
+      }
+
+      /* 表格美化 */
+      table {
+          width: 70%;
+          margin: 0 auto 25px; /* 表格居中 */
+          border-collapse: collapse; /* 合并边框 */
+          text-align: center;
+          font-size: 1.05rem;
+      }
+
+      th, td {
+          padding: 12px;
+          border: 1px solid #ddd;
+      }
+
+      th {
+          background-color: #2f2fad;
+          color: white;
+      }
+
+      tr:nth-child(even) {
+          background-color: #f9f5e8; /* 隔行变色 */
+      }
+
+      /* 表单美化 */
+      form {
+          width: 70%;
+          margin: 0 auto; /* 表单居中 */
+          padding: 20px;
+          background-color: white;
+          border-radius: 10px;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+      }
+
+      input[type="text"], textarea {
+          width: 100%;
+          padding: 10px;
+          margin-top: 5px;
+          border: 1px solid #ddd;
+          border-radius: 6px;
+          font-family: inherit; /* 继承全局字体 */
+          font-size: 1rem;
+      }
+
+      textarea {
+          resize: vertical; /* 仅允许垂直调整大小 */
+      }
+
+      button {
+          background-color: #2f2fad;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 6px;
+          cursor: pointer;
+          font-size: 1rem;
+          transition: background-color 0.3s;
+      }
+
+      button:hover {
+          background-color: #1f1f8a;
+      }
+  </style>
+</head>
+<body>
+<h1>欢迎来到张业晖的个人主页</h1>
+<hr>
+<h2>关于我</h2>
+<img src="微信头像.jpg" alt="我的照片" width="200">
+<p>大家好！我叫<strong>张业晖</strong>，今年20岁，是一名计算机专业的大学生。</p>
+<p>我喜欢编程、阅读和打篮球。我的座右铭是：<em>"学无止境，每天进步一点点。"</em></p>
+
+<h2>我的技能</h2>
+<ul class="c">
+  <li>HTML 网页制作</li>
+  <li>Python 编程</li>
+  <li>Office 办公软件</li>
+  <li>摄影与修图</li>
+</ul>
+
+<h2>我的学习计划</h2>
+<ol id="ap">
+  <li>学习 HTML 基础</li>
+  <li>学习 CSS 样式</li>
+  <li>学习 JavaScript 交互</li>
+  <li>完成一个完整的网站项目</li>
+</ol>
+
+<h2>我喜欢的网站</h2>
+<p>以下是一些我经常访问的网站：</p>
+<ul class="c"> <!-- 统一列表样式 -->
+  <li><a href="https://www.baidu.com" target="_blank">百度</a>-搜索引擎</li>
+  <li><a href="https://www.bilibili.com" target="_blank">哔哩哔哩</a>-学习视频</li>
+  <li><a href="https://www.github.com" target="_blank">GitHub</a>-代码托管</li>
+</ul>
+
+<h2>联系我</h2>
+<table border="1">
+  <tr>
+    <th>联系方式</th>
+    <th>内容</th>
+  </tr>
+  <tr>
+    <td>邮箱</td>
+    <td>1260905728@qq.com</td>
+  </tr>
+  <tr>
+    <td>电话</td>
+    <td>19822508558</td>
+  </tr>
+  <tr>
+    <td>地址</td>
+    <td>China</td>
+  </tr>
+</table>
+
+<h2>给我留言</h2>
+<form>
+  <p style="text-align: left;"> <!-- 表单内文字左对齐更符合习惯 -->
+    <label>你的名字：</label><br>
+    <input type="text" name="name" placeholder="请输入你的名字">
+  </p>
+  <p style="text-align: left;">
+    <label>你的邮箱：</label><br> <!-- 修复重复的"你的名字"问题 -->
+    <input type="text" name="email" placeholder="请输入你的邮箱">
+  </p>
+  <p style="text-align: left;">
+    <label>留言内容：</label><br>
+    <textarea name="message" rows="4" placeholder="请输入你的留言"></textarea>
+  </p>
+  <p style="text-align: left;">
+    <button type="submit">提交</button>
+  </p>
+</form>
+</body>
+</html>
